@@ -1,0 +1,18 @@
+<section id="users" class="container">
+  <h1>All Users</h1>
+  {{#each users}}
+  <div class="gig">
+    <h3>{{title}}</h3>
+    <p>{{description}}</p>
+    <ul>
+      <li>Budget:{{budget}}</li>
+      <li><a href="mailto:{{Contact_email}}" class="btn btn-reverse">Apply Now</a></li>
+    </ul>
+    <div class="tech">
+      <small>Technologies Needed: <span>{{technologies}}</span></small>
+    </div>
+  </div>
+  {{else}}
+  <p>no gig is available</p>
+  {{/each}}
+</section>
